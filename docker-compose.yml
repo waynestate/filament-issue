@@ -1,0 +1,9 @@
+services:
+    cms:
+        container_name: cms
+        build: ./docker/
+        volumes:
+            - ./:/var/www/html
+        ports:
+            - "80:80"
+
